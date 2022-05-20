@@ -44,7 +44,7 @@ public class PickupObject : MonoBehaviour
                 //calling into function on inventory manager to add the picked up item to the list
                 //passing the collider object.gameobject to it 
                 infoText.text = "";
-                _inventoryManager.AssignInventoryItem(other.gameObject);
+                _inventoryManager.AssignInventoryItem(other.gameObject.name);
                  //after picked up destroys the object from the scene
                  Destroy(other.gameObject);
             

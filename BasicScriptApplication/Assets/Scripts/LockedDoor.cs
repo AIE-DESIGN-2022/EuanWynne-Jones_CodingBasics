@@ -30,9 +30,10 @@ public class LockedDoor : MonoBehaviour
             //turns the door off if both conditions are met
             transform.parent.gameObject.SetActive(false);
 
-
+            //uses the reqiored item to open the door
             _inventoryManager.UseItem(keyName);
 
+            //removes the key from the player inventory
             transform.parent.gameObject.SetActive(false);
 
         }

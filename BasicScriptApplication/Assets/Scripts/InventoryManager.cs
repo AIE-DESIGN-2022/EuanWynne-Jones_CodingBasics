@@ -25,10 +25,10 @@ public class InventoryManager : MonoBehaviour
          
         }
     }
-    public void AssignInventoryItem(GameObject _itemPickedUp)
+    public void AssignInventoryItem(string _itemPickedUp)
         {
             //add the item that was picked up to the list
-            inventoryItemNames.Add(_itemPickedUp.name);
+            inventoryItemNames.Add(_itemPickedUp);
             UpdateInventoryText();
     }
         private void UpdateInventoryText()
