@@ -46,6 +46,6 @@ public class Teleporter : MonoBehaviour {
 
 	//This section Draws a line from the teleporter in to the teleporter out within the editor
 	void OnDrawGizmos(){
-		Gizmos.DrawLine(transform.position,teleportOutLocation.transform.position);
+		if (teleportOutLocation != null) Gizmos.DrawLine(transform.position,teleportOutLocation.transform.position);
 	}
 }
